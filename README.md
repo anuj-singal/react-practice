@@ -1,12 +1,110 @@
-# React + Vite
+# 🧮 React Counter App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple counter application built using **React** and **useState** hook.  
+This project demonstrates updating state in React, including multiple state updates in a single function call.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📸 Screenshot
 
-## Expanding the ESLint configuration
+<p align="center">
+  <img src="./screenshot.png" alt="React Counter Screenshot" width="400px" height="400px">
+</p>
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📂 Project Structure
+```
+react-counter/
+├── public/
+│   ├── index.html
+│   └── favicon.ico
+├── src/
+│   ├── App.css
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+├── package.json
+└── README.md
+```
+
+---
+
+## 🚀 Features
+- Increment counter by **+4** with a single button click.
+- Decrement counter by **-1**.
+- Demonstrates functional updates in `useState`.
+- Simple and beginner-friendly React code.
+
+---
+
+## 🛠️ Installation & Setup
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/anuj-singal/react-counter.git
+   ```
+
+2. **Navigate to the project folder**
+   ```bash
+   cd react-counter
+   ```
+
+3. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+4. **Run the app**
+   ```bash
+   npm run dev
+   ```
+
+5. Open your browser at:
+   ```
+   http://localhost:5173
+   ```
+
+---
+
+## 📝 Code Explanation
+
+### `useState` Hook
+We start the counter at `15`:
+```javascript
+const [counter, setCounter] = useState(15);
+```
+
+### Increment Function
+Using functional updates ensures that each increment is based on the latest state value:
+```javascript
+const addValue = () => {
+  setCounter(prev => prev + 1);
+  setCounter(prev => prev + 1);
+  setCounter(prev => prev + 1);
+  setCounter(prev => prev + 1);
+};
+```
+
+### Decrement Function
+A simple decrement by `-1`:
+```javascript
+const removeValue = () => {
+  setCounter(counter - 1);
+};
+```
+
+---
+
+## 📜 License
+This project is licensed under the **MIT License**.  
+You are free to use, modify, and distribute this project.
+
+---
+
+## 👨‍💻 Author
+<p>
+  <a href="https://github.com/anuj-singal">
+    <img src="https://img.shields.io/badge/GitHub-anuj--singal-black?style=for-the-badge&logo=github" alt="GitHub Profile">
+  </a>
+</p>
