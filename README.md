@@ -42,12 +42,12 @@ react-counter/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/anuj-singal/react-counter.git
+   git clone https://github.com/anuj-singal/react-practice.git
    ```
 
 2. **Navigate to the project folder**
    ```bash
-   cd react-counter
+   cd react-practice
    ```
 
 3. **Install dependencies**
